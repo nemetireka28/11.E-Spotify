@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Spotify!</title>
+  </head>
+  <body>
+    <div class="main">
+        <div class="menu">
+            <div class="menu_items">Home</div>
+            <div class="menu_items">Radio</div>
+        </div>    
+        <div class="content">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                  <div class="my_card">
+                    <img src="album.jpg" onclick="changeMusic('Jonas Brothers ft. Karol G - X (Official Lyric Video) ft. KAROL G.mp3')">
+                    <h2>X</h2>
+                    <h3>Jonas Brothers</h3>
+                  </div>
+                  <div class="my_card">
+                      <img src="harry.png" onclick="changeMusic('Harry Styles - To Be So Lonely (Official Audio).mp3')">
+                      <h2>To be so lonely</h2>
+                      <h3>Harry Styles</h3>
+                  </div>
+                  <div class="my_card">
+                      <img src="ariana.jpg" onclick="changeMusic('Ariana Grande - positions (lyric video).mp3')">
+                      <h2>Positions</h2>
+                      <h3>Ariana Grande</h3>
+                  </div>
+                  </div>
+                  <div class="carousel-item">
+                  
+                  </div>
+                  <div class="carousel-item">
+                  
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </div>
+        <div class="play">
+          <div class="music_data_holder">
+            <div id="music_img"></div>
+            <div id="actual_author">Jonas Brothers</div>
+            <div id="actual_title">X</div>
+          </div>
+          <div class="controller_holder">
+              <div class="controller">
+                <img src="backward-solid.svg" id="backward">
+                <img src="play.svg" id="play_pause" onclick="pMusic()">
+                <img src="forward-solid.svg" id="forward">
+              </div>
+              <div class="player">
+                  <audio id="audioplayer">
+                  <source src="Jonas Brothers ft. Karol G - X (Official Lyric Video) ft. KAROL G.mp3" type="audio/mpeg">
+                  </audio> 
+                  <div class="time_line">
+                  <div class="inner_line" id="inner_line"></div>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
